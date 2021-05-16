@@ -1,0 +1,566 @@
+* {
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #777;
+    padding:0 35px;
+}
+
+header {
+    position: fixed;
+    height: 4em;
+    width: 160rem;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    left:26rem;
+}
+
+.logo img {
+    position: fixed;
+    padding-top: 0;
+    height: 15%;
+    transition: all .2s;
+    animation: logo1 0.8s ease-out;
+    max-width:15rem;
+    max-height: 10rem;
+    left: 4rem;
+}
+
+ul {
+    float: left;
+}
+li {
+    list-style: none;
+    font-weight: bold;
+    float: left;
+    color:black;
+    
+}
+
+a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0, 0,0.5);
+}
+
+a:active {
+    transform: translateY(-1px);
+    color: cyan;
+    box-shadow: 0 5px 10px rgba(0,0,0,1);
+}
+
+a:link,a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: black;
+    padding: 1rem 2rem;
+    display:inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    animation: logo 0.8s ease-out;
+}
+@keyframes logo {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+a::after {
+    content:"";
+    display: inline-block;
+
+}
+
+@keyframes logo1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    80% {
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ 
+
+ .flexbox img {
+    width:60%;
+    padding:10% 0 8% 5%;
+    float:left;
+ }
+#logo:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,1);
+    border-radius: 100px;
+    transform: translateY(-3px);
+}
+.text {
+    text-align: center;
+    padding-top: 150px;
+    left:80rem;
+}
+
+.name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+}
+
+.text img {
+    width:25rem;
+    border-radius: 10%;
+}
+
+
+.break {
+    clear: both;
+}
+.hello{
+    padding-right: 10rem;
+    position: relative;
+    right:5rem;
+}
+.Specialities {
+    text-align: center;
+    padding-top: 2.5rem;
+    color: #3e3e3f;
+    font-size: 150%;
+    padding-bottom: 2rem;
+    width: 20rem;
+}
+
+
+.veg {
+    background-image: linear-gradient(to right bottom, rgba(28,28,28,0.8),rgba(28,28,28,0.8)),
+    url(../img/pexels-rachel-claire-4577179.jpg);
+    background-size: cover;
+    padding: 10rem 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,1);
+    text-align: center;
+}
+
+.feature{
+    background-color: rgba(6, 255, 47, 1);
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(40, 180, 133, 0.15);
+    width: 19rem;
+    float: left;
+    border:0 5rem;
+    padding:0.2rem 2rem;
+    color:black;
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 6rem;
+
+
+}
+
+.row:not(:last-child){
+    margin-bottom: 8rem;
+}
+
+
+.feature img{
+    padding-top: 1rem;
+    border-radius: 2rem;
+    width:15rem;
+}
+.feature:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,1);
+    transform: translateY(-3px);
+}
+
+.feature1{
+    background-color: rgba(245, 9, 9, 1);
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(40, 180, 133, 0.15);
+    width: 19rem;
+    float: left;
+    border:0 5rem;
+    padding:0 2rem;
+    color:black;
+}
+
+.feature1:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,1);
+    transform: translateY(-3px);
+}
+
+.feature1 img{
+    padding-top: 1rem;
+    border-radius: 2rem;
+    width:15rem;
+}
+
+button{
+    background-color: white;
+    padding: 5px;
+    border:10px;
+    border-radius: 5px;
+}
+
+h6 {
+    font-size: 10px;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: grey;
+    box-shadow: 0 10px 20px rgba(0,0,0,1);
+    transform: translateY(-3px);
+
+}
+
+button:active,button:visited{
+    background-color: rgb(71, 241, 71);
+    transform:translateY(-1px);
+}
+
+button:focus{
+    background-color:rgb(223, 241, 57);
+}
+
+h3{
+color:black;
+}
+                        
+.Specialities input{
+    padding: 1rem;
+    font-size: 1.7rem;
+    border:1px solid grey;
+    float: left;
+    width:20rem;
+    background:#f1f1f1;
+    border-radius: 1rem;
+    position: relative;
+    left: 0;
+    background-image: url(../img/magnify.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+
+.Specialities input:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.863);
+    transform: translateY(-3px);
+}
+
+.row1 {
+    max-width: 114rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+
+}
+
+.row1:not(:last-child){
+    margin-bottom: 80rem;
+}
+
+.veg1 {
+    background-image: linear-gradient(to right bottom, rgba(28,28,28,0.8),rgba(28,28,28,0.8)),
+    url(../img/pexels-anna-tis-6341164.jpg);
+    background-size: cover;
+    padding: 10rem 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,1);
+}
+
+
+
+
+.revhead {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 200%;
+    padding-bottom: 5rem;
+}
+
+.reviews{
+    background-image:  linear-gradient(to right bottom, rgba(28,28,28,0.8),rgba(28,28,28,0.8)),url(../img/pexels-waldemar-brandt-2290070.jpg);
+    margin-top: 10rem;
+    background-size: cover;
+    padding-top: 5rem;
+    border-radius: 2rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,1);
+}
+
+.card{
+    background-image:linear-gradient(to right bottom, rgba(28,28,28,0.8),rgba(28,28,28,0.8));
+    transition: all .8s;
+    padding-bottom: 2rem;
+    perspective: 130rem;
+    position: relative;
+    border-radius: 1rem;
+    height: 15rem;
+    padding-right: 5rem;
+    width:11.5rem;
+    box-shadow: 0 10px 20px rgb(255, 250, 250);
+}
+
+.card:hover .side1 {
+    transform: rotateY(-180deg);
+}
+
+.col{
+    width:8rem;
+    padding-bottom: 4rem;
+}
+
+.card .side1{
+    background-image: linear-gradient(to right bottom,#ffb900,#ff7730);
+    height:100%;
+    transition: all .8s ease;
+    color: white;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: all 0.8s ease;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 10px 20px rgb(255, 255, 255);
+}
+
+.card .side2{
+    background-image:linear-gradient(to right bottom,#20bf55,#01baef);
+    transform:rotateY(180deg);
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    backface-visibility: hidden;
+    height: 20rem;
+    transition: all 0.8s;
+    border-radius: 1rem;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 10px 20px rgb(255, 255, 255);
+}
+
+.card:hover .side2 {
+    transform: rotateY(0);
+}
+
+.side1 img{
+    border-radius: 2.5rem;
+    width:10rem;
+    border-top: 1rem;
+    padding-top: 1rem;
+}
+
+.side1 h4{
+    color: rgb(58, 57, 57);
+}
+.side2 p{
+    color:black;
+    padding-top: 5rem;
+}
+
+.heading{
+    font-size: 150%;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right,rgb(46, 243, 250),rgb(0, 4, 212));
+    -webkit-background-clip: text;
+    color:transparent;
+    transition: all .2s;
+    letter-spacing: 0.2rem;
+    display: inline-block;
+}
+
+.heading:hover{
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-overflow: .5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.bg{
+    text-align: center;
+}
+
+form input{
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    border:1rem;
+    background-color: rgba(rgba(17, 238, 238, 0.5), green, blue, alpha);
+    display: block;
+}
+
+form input:focus{
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 238, 255, 0.863);
+
+}
+
+form input:hover{
+    box-shadow: 0 10px 20px rgba(255, 187, 2, 0.863);
+    transform: translateY(-3px);
+
+}
+
+.reve{
+    height:20rem;
+    text-align:center;
+}
+
+.form{
+    background-image: linear-gradient(to right bottom, rgba(28,28,28,0.8),rgba(28,28,28,0.8)),
+    url(../img/pexels-rachel-claire-4577179.jpg);
+    background-size: cover;
+    padding: 10rem 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,1);
+}
+
+.butn{
+    background-color: rgb(1, 238, 255);
+    width:10rem;
+    height:5rem;
+}
+
+.bg h1{
+    font-size: 300%;
+}
+
+.foot li{
+    display: inline-block;
+    padding: 0;
+    border: 0;
+}
+
+.foot li a{
+    float: left;
+    background-color: white;
+    color:black;
+    padding-bottom: 0;
+    margin:0.7rem;
+    height:3.5rem;
+
+}
+
+.footernav{
+    float: left;
+    text-align: center;
+    background-image: linear-gradient(to right bottom, rgba(28,28,28,0.8),rgba(28,28,28,0.8)),
+    url(../img/pexels-rachel-claire-4577179.jpg);
+    background-size: cover;
+    padding: 10rem 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,1);
+    width:100%;
+    margin:auto;
+}
+
+.logobox img{
+    border-radius: 5px;
+    width:40rem;
+}
+
+.logobox img:hover{
+    box-shadow: 0 10px 20px rgb(255, 255, 255);
+    border-radius: 100px;
+    border-radius: 10px;
+}
+
+.social img{
+    width:4rem;
+}
+.centre{
+    position:relative;
+    left:0;
+}
+.temp{
+    padding-left:15rem;
+}
+.temp2{
+    padding-left:22rem;
+}
+@media (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
+    
+    .veg{
+        width:60rem;
+    }
+
+    .veg1{
+        width:60rem;
+    }
+    
+    .reviews{
+        width:60rem;
+        padding-right:5rem;
+    }
+
+    .form{
+        width:60rem;
+    }
+
+    .footernav{
+        width:60rem;
+    }
+
+    .text{
+        width:10rem;
+    }
+    .text img{
+        width:15rem;
+        position: relative;
+        left:0;
+        padding-right: 7rem;
+    }
+     
+    .logo img{
+        width:50%;
+        left:0;
+    }
+    header{
+        font-size: 0.2rem;
+        left:12rem;
+    }
+    .foot{
+        left:2rem;
+    }
+    .flexbox img{
+        width:100%;
+    }
+    .temp{
+        padding-left:0;
+    }
+    .temp2{
+        padding-left:15rem;
+    }
+    .heading{
+        font-size: 100%;
+    }
+}
