@@ -165,7 +165,7 @@ a::after {
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(40, 180, 133, 0.15);
-    width: 19rem;
+    width: 18rem;
     float: left;
     border:0 5rem;
     padding:0.2rem 2rem;
@@ -203,7 +203,7 @@ a::after {
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(40, 180, 133, 0.15);
-    width: 19rem;
+    width: 18rem;
     float: left;
     border:0 5rem;
     padding:0 2rem;
@@ -499,10 +499,18 @@ form input:hover{
     left:0;
 }
 .temp{
-    padding-left:15rem;
+    padding-left:20rem;
 }
 .temp2{
     padding-left:22rem;
+}
+.bct{
+    color:white;
+    padding-left: 35rem;
+}
+.bct a{
+    color:black;
+    background-color: rgba(19, 218, 168, 0.815);
 }
 @media (max-width: 600px) {
     html {
@@ -510,24 +518,24 @@ form input:hover{
     }
     
     .veg{
-        width:60rem;
+        width:58rem;
     }
 
     .veg1{
-        width:60rem;
+        width:58rem;
     }
     
     .reviews{
-        width:60rem;
+        width:58rem;
         padding-right:5rem;
     }
 
     .form{
-        width:60rem;
+        width:58rem;
     }
 
     .footernav{
-        width:60rem;
+        width:58rem;
     }
 
     .text{
@@ -541,12 +549,12 @@ form input:hover{
     }
      
     .logo img{
-        width:50%;
+        width:20%;
         left:0;
     }
     header{
         font-size: 0.2rem;
-        left:12rem;
+        left:10rem;
     }
     .foot{
         left:2rem;
@@ -555,7 +563,7 @@ form input:hover{
         width:100%;
     }
     .temp{
-        padding-left:0;
+        padding-left:5rem;
     }
     .temp2{
         padding-left:15rem;
@@ -563,4 +571,13 @@ form input:hover{
     .heading{
         font-size: 100%;
     }
+    .bct{
+        color:white;
+        padding-left: 22rem;
+    }
+    .hello{
+        padding-right: 5rem;
+        position: relative;
+        right:0;
+    }   
 }
